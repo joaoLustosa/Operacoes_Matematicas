@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    font-family: 'Silkscreen', cursive;
+    letter-spacing: 4px;
+    background-color: #25252A;
+}
+
+.title {
+    color: #f9e506;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: -250px;
+}
+
+.titleMini {
+    color: #f9e506;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    color: rgb(255, 0, 68);
+}
+
+h4 {
+    font-size: 25px;
+    color: rgb(255, 0, 68);
+}
+
+.saidas {
+    font-size: 40px;
+    color: #f9e506;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+    font-size: 40px;
+    color: #f9e506;
+    background-color: rgba(0, 0, 0, 0.137);
+    margin-bottom: 30px;
+}
+
+.operation {
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: -100px;
+    margin-bottom: -550px;
+    padding: 20px;
+    padding-bottom: -100px;
+}
+
+.containerRadio {
+    background-color: #f9e506;
+    height: 90px;
+    width: 260px;
+    margin-left: 41%;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 0 30px 0 rgba(255, 0, 68, 40%);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.label1, .label2 {
+    display: block;
+    height: 180px;
+    width: 130px;
+    background-size: 130px 180px;
+    text-align: center;
+    background:linear-gradient(
+        to bottom,
+        #f9e506 0, #f9e506 90px,
+        rgb(255, 0, 68) 90px, rgb(255, 0, 68) 180px
+    );
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    color: rgb(255, 0, 68);
+    cursor: pointer;
+}
+.label2 {
+    right: 0;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/*A parte do CSS ta com esse aviso porque eu usei uma propriedade para tirar as setas do input[type="number"]*/
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+span {
+    display: flex;
+    height: 90px;
+    width: 145px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+input[type="radio"]:checked + label {
+    background-position: 0 - 90px;
+    color: #f9e506;
+}
+
+.button, .mainButton {
+    width: 300px;
+    height: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 68);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.button:hover, .mainButton:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: black;
+}
+
+.buttonMini {
+    width: 180px;
+    height: 80px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 68);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+} 
+
+.buttonMini:hover {
+    box-shadow: inset 180px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: black;
+}
+
